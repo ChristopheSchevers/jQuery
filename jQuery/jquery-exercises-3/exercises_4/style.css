@@ -1,0 +1,11 @@
+.default {
+    min-height: 10px;
+    width: 200px;
+    background-color: blue;
+    margin: 20px;
+}
+
+button {
+    position: relative;
+    top: 160px;
+}
