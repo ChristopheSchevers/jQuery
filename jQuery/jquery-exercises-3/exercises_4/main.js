@@ -1,9 +1,35 @@
+$("#rect").css({
+    "height": 10,
+    "width": 200,
+    "margin": 20
+});
+
 $("#one").click(function() {
-    $("#rect").css("min-height", $(this).height()+10);
+    let height = $("#rect").height();
     
+    if (height < 100) {
+        $("#rect").height(function(n,c) {
+            return c + 10;
+        })
+    } else {
+        $("#rect").height(function(n,c) {
+            return c = 10;
+        });
+    }    
 });
 
 $("#two").click(function() {
     $("#rect").css("background-color", "green");
-    $("#rect").removeClass("default");
+});
+
+$("#three").click(function() {
+    $("#rect").css("background-color", "");
+});
+
+$("#four").click(function() {
+    $("#rect").hide();
+});
+
+$("#five").click(function() {
+    $("#rect").show();    
 });
