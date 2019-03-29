@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>jQuery : Exercise 3</title>
 </head>
 <body>
-    
+    <form>
+        <h4>Name</h4>
+        <input type="text" name="info" id="lName" pattern="[A-Za-z -]" placeholder="Doe" required>
+        <h4>First Name</h4>
+        <input type="text" name="info" id="fName" pattern="[A-Za-z -]" placeholder="John" required>
+        <h4>Email</h4>
+        <input type="email" name="info" id="eMail" placeholder="john.doe@mail.com" required>
+        <h4>Phone Number</h4>
+        <input type="text" name="info" id="pNum" pattern="tel" placeholder="000111222" required>
+    </form>
+
+    <script type="text/javascript" src="jquery-2.2.4.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
