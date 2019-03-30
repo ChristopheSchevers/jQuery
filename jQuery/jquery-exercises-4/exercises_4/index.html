@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>jQuery : Exercise 4</title>
 </head>
 <body>
-    
+    <form>
+        <h4>Name</h4>
+        <input type="text" id="lName" pattern="[A-Za-z -]+">
+        <h4>First Name</h4>
+        <input type="text" id="fName" pattern="[A-Za-z -]+">
+        <h4>Date of Birth</h4>
+        <input type="date" id="dOb">
+        <h4>Place of Birth</h4>
+        <input type="text" id="pOb" pattern="[A-Za-z -]+">
+        <h4>Work</h4>
+        <input type="text" id="work" pattern="[A-Za-z -]+">
+        <h4>Company</h4>
+        <input type="text" id="company" pattern="[A-Za-z -]+">
+        <button type="button">Generate</button>
+    </form>
+    <p id="result"></p>
+
+    <script type="text/javascript" src="jquery-2.2.4.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
