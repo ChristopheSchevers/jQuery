@@ -7,5 +7,14 @@ $("button").click(function() {
     let work = $("#work").val();
     let company = $("#company").val();
 
-    $("#result").html(`${fName} ${lName}, born ${dOb} in ${pOb}, currently a ${work} in ${company}.`);
+    // Date format conversion
+    let d = new Date(dOb);
+    let day = d.getDate();
+    let month = d.getMonth()+1;
+    let year = d.getFullYear();
+
+    let newDob = `${day}/${month}/${year}`;
+
+    // Print result to browser
+    $("#result").html(`${fName} ${lName}, born ${newDob} in ${pOb}, currently a ${work} in ${company}.`);
 });
